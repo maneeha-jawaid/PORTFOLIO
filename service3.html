@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+       
+.logo img {
+    height: 60px;
+}
+ .nav-links {
+            list-style: none;
+            display: flex;
+        }
+        .nav-links li {
+            margin: 0 15px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+        .nav-buttons .btn {
+            padding: 10px 20px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .nav-buttons .btn:hover {
+            background-color: #f0f0f0;
+        }
+        .container2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .container2 h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .container2 p {
+            font-size: 1rem;
+            max-width: 600px;
+            margin: 10px 0;
+        }
+        .image {
+            width: 100%;
+            max-width: 400px;
+            height: 500px;
+            background-color: #ddd;
+            background-image: url('./images/5.avif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 20px 0;
+        }
+        @media (min-width: 768px) {
+            .container2 {
+                flex-direction: row;
+                text-align: left;
+            }
+            .container2 h1 {
+                font-size: 3rem;
+            }
+            .container2 p {
+                font-size: 1.2rem;
+                margin-right: 20px;
+            }
+            .image {
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Corporate Tech Computer Logo.png" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                      
+                <li><a href="service.html">About us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+               
+                <li><a href="service2.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="service3.html">More</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="service.html" class="btn btn-light">Learn More</a>
+            </div>
+            <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div class="container2">
+            <div>
+                <h2>Innovative</h2><br>
+                <h1>Transforming Ideas into Exceptional Digital Experiences</h1><hr>
+               <br><br> <p>I am a skilled front-end web developer, specialize in creating visually captivating and user-friendly digital experiences. From crafting responsive websites to designing unique visual content and intuitive user interfaces, I deliver exceptional digital solutions that exceed client expectations. UI/UX design, logo/banner design, frontend development,  backend with laravel, erp solutions etc.
+            </p>
+            </div>
+            <div class="image"></div>
+        </div>
+    </main>
+    <HR>
+    <section class="newsletter-section">
+        <h2>Stay Informed with my Newsletter</h2>
+        <p>Sign up to receive the latest news and updates from me.</p><br>
+        <hr>
+        <div class="newsletter-container">
+            <div class="newsletter-signup">
+                <form action="submit-your-form-action" method="post">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Sign up</button>
+                </form>
+                <p>By clicking Sign up, you agree to my <a href="#">Terms and Conditions</a>.</p>
+            </div>
+            <div class="newsletter-subscribe">
+                <h3>MY PORTFOLIO</h3>
+                <p>Stay up to date on the latest features and releases by joining the newsletter.</p>
+                <form action="submit-your-form-action" method="post">
+                    <input type="email" placeholder="your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p>By subscribing, you agree to the <a href="#">Privacy Policy</a> and consent to receive updates from me.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>© 2025 MANEEHA JAWAID  . All rights reserved.</p>
+        <hr>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
